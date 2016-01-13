@@ -1,10 +1,10 @@
 {
-  "name": "resn-threejs-tpl",
-  "version": "0.0.1",
+  "name": "webgl.beer",
+  "version": "1.0",
   "authors": [
     "Kelly Milligan <kellymilligan@resn.co.nz>"
   ],
-  "description": "Basic ThreeJS template",
+  "description": "A beery WebGL experiment to render an interactive beer can in the browser.",
   "main": "index.html",
   "moduleType": [
     "node"
