@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--> <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--> <!--[if IE 8]><html class="no-js lt-ie9"><![endif]--> <!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>webgl.beer - a beery WebGL experiment</title>
+
+        <meta name="author" content="Kelly Milligan">
+        <meta name="description" content="A WebGL experiment to render an interactive beer can in the browser.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="webgl.beer - a WebGL experiment by Kelly Milligan" />
+        <meta property="og:site_name" content="webgl.beer" />
+        <meta property="og:url" content="http://webgl.beer" />
+        <meta property="og:description" content="A beery WebGL experiment to render an interactive beer can in the browser, coded with THREE.js" />
+        <meta property="og:image" content="http://webgl.beer/i/og-share.jpg" />
+
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <script type="text/javascript" src="j/_libs/jquery.min.js"></script>
+        <script type="text/javascript" src="j/_libs/stats.min.js"></script>
+        <script type="text/javascript" src="j/_libs/dat.gui.min.js"></script>
+        <script type="text/javascript" src="j/_libs/three.min.js"></script>
+
+        <script src="j/loaders/DDSLoader.js"></script>
+        <script src="j/loaders/MTLLoader.js"></script>
+        <script src="j/loaders/OBJMTLLoader.js"></script>
+
+        <script type="text/javascript" src="j/Detector.js"></script>
+        <script type="text/javascript" src="j/effects/OculusRiftEffect.js"></script>
+
+        <link rel="stylesheet" href="c/webgl.beer.css">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-69259933-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </head>
+
+    <body style="overflow: hidden;">
+
+        <div id="container"></div>
+        <!-- <div id="shadow"></div> -->
+
+        <div class="lightswitch">
+            <div class="on">
+                <img src="i/lightbulb-on.svg">
+                <img src="i/lightbulb-on-active.svg">
+            </div>
+            <div class="off">
+                <img src="i/lightbulb-off.svg">
+                <img src="i/lightbulb-off-active.svg">
+            </div>
+        </div>
+
+        <div class="info__button">
+            <img src="i/info-black.svg">
+            <img src="i/info-white.svg">
+        </div>
+
+        <div id="loader">
+
+        </div>
+
+        <div class="info">
+
+            <a class="info__close" href="#">close</a>
+
+            <h1>webgl.beer</h1>
+            <p>A beery WebGL experiment to render an interactive beer can in the browser. It's coded with THREE.js and uses a can model created by <a href="http://www.turbosquid.com/Search/Artists/Mihai-Panait" target="_blank">Mihai Panait</a>.</p>
+
+            <h2>Stuff to add:</h2>
+            <ul>
+                <li>Accelrometer movement to devices</li>
+                <li>Improved control of label size, position and appearance</li>
+                <li>Drag and droppable label assets</li>
+                <li>Advanced material options</li>
+                <li>Bottle model and labels</li>
+                <li>Range of package shapes and sizes</li>
+            </ul>
+
+            <p>Proudly made by <a href="http://kellymilligan.co.nz" target="_blank">Kelly Milligan</a></p>
+
+        </div>
+
+        <link href='https://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+
+            if ( ! Detector.webgl ) {
+                Detector.addGetWebGLMessage({parent: document.getElementById('container')});
+            }
+
+        </script>
+
+        <script type="text/javascript" src="j/webgl.beer.min.js"></script>
+
+    </body>
+
+</html>

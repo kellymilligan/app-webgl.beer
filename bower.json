@@ -1,0 +1,27 @@
+{
+  "name": "resn-threejs-tpl",
+  "version": "0.0.1",
+  "authors": [
+    "Kelly Milligan <kellymilligan@resn.co.nz>"
+  ],
+  "description": "Basic ThreeJS template",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "threejs": "*",
+    "jquery": "~2.1.3",
+    "stats.js": "*",
+    "dat-gui": "~0.5.1"
+  }
+}
