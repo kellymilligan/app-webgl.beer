@@ -1,6 +1,6 @@
 {
-  "name": "example-project",
-  "version": "0.1.0",
+  "name": "webgl.beer",
+  "version": "1.0",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-cssmin": "^0.14.0",
